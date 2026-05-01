@@ -1,10 +1,11 @@
 using ProductGrpc.Services;
 using ProductGrpc.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseSqllite("Data Source=ProductGrpc.db")
+    opt.UseSqlite("Data Source=ProductGrpc.db")
 );
 
 // Add services to the container.
