@@ -1,6 +1,11 @@
 using ProductGrpc.Services;
+using ProductGrpc.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>(opt =>
+    opt.UseSqllite("Data Source=ProductGrpc.db")
+);
 
 // Add services to the container.
 builder.Services.AddGrpc();
