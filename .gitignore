@@ -1,0 +1,31 @@
+## Build results
+bin/
+obj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Credentials & Secrets
+appsettings.*.json
+!appsettings.Development.json
+*.pfx
+*.p12
+*.key
+*.pem
+.env
+.env.*
+secrets.json
+
+## Visual Studio
+.vs/
+*.rsuser
+
+## Rider
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
