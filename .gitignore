@@ -29,3 +29,5 @@ secrets.json
 
 ## VS Code
 .vscode/
+Migrations/
+ProductGrpc.db
